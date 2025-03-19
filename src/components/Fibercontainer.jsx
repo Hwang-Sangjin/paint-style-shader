@@ -4,9 +4,10 @@ import { OrbitControls } from "@react-three/drei";
 
 const Fibercontainer = () => {
   return (
-    <Canvas>
+    <Canvas camera={[0, 0, 3]}>
       <Experience />
       <OrbitControls />
+      <axesHelper />
     </Canvas>
   );
 };
